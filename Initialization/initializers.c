@@ -42,7 +42,7 @@ int	input_checker(int ac, char *av[], t_vars *prog)
 	prog->map = NULL;
 	prog->fd = -1;
 	if (ac != 2)
-		exit(return_error(prog, "No file found"));
+		exit(return_error(prog, "Usage: miniRT [map file]"));
 	if (!ft_strchr(av[1], '.'))
 		exit(return_error(prog, "File not supported - no extension found"));
 	file_ext = ft_split(av[1], '.');
